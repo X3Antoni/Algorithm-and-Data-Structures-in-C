@@ -1,7 +1,7 @@
 ---  
 title: Linked Lists
 author: Markus Antoni Suwignyo
-date: January 20, 2014  
+date: 4/20/2017
 ---  
 
 # Introduction
