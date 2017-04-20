@@ -27,9 +27,9 @@ struct List {
 
 There's also some function that you can use. The list are:
 
-1. `search(L, k)`
-2. `insert(L, k)`
-3. `delete(L, k)`
-4. `view(L)`
+1. `insertList(L, k)`
+2. `deleteList(L, k)`
+3. `viewList(L)`
+4. `popList(L)`
 
 where `L` is the list that you want to process, and `k` is the value on some node.
