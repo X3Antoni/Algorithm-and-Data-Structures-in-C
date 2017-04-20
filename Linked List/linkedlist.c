@@ -15,6 +15,7 @@ void viewList(struct list *buff) {
 
 void initializeList(struct list *buff)
 {
+    /* Always initialize your list first! */
     buff->head = '\0';
     buff->tail = '\0';
 }
@@ -38,6 +39,30 @@ bool emptyList(struct list *buff)
         return true;
     else
         return false;
+}
+
+void deleteList(struct list *buff, int value)
+{
+    struct node *temp;
+    temp = (struct node *) malloc(sizeof(struct node *));
+    
+    temp = buff->head;
+
+    while(temp->key != value) {
+        if(temp == '\0'){
+            return;
+        }
+        temp = temp->next;
+    }
+
+    if(temp->prev != '\0')
+        temp->prev->next = temp->next;
+    else
+        buff->head = temp->next;
+    if(temp->next != '\0')
+        temp->next->prev = temp->prev;
+    
+    free(temp);
 }
 
 int popList(struct list *buff)

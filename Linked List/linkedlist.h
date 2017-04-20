@@ -16,6 +16,8 @@ void viewList(struct list *buff);
 
 void initializeList(struct list *buff);
 
+void deleteList(struct list *buff, int value);
+
 void insertList(struct list *buff, int value);
 
 bool emptyList(struct list *buff);
